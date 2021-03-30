@@ -37,7 +37,7 @@ public class AddresslistServlet extends HttpServlet {
 			resp.sendRedirect(req.getContextPath() + "/al");
 		} else if("find".equals(action)) {
 			String keyword = req.getParameter("keyword");
-			System.out.println(keyword);
+//			System.out.println(keyword);
 			PhoneBookDao dao = new PhoneBookDaoImpl();
 			List<PhoneBookVo> list = dao.search(keyword);
 			req.setAttribute("list", list);
