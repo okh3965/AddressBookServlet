@@ -16,7 +16,6 @@
 	<h1>주소록 Servlet</h1>
 	<form action="<c:url value = "/al?a=find"/>"
 		method="POST">
-		<input type="hidden" name="action" value="find"/>	
 		<label>검색어</label>
 		<input type="text" name="keyword" />
 		<input type="submit" value="검색" />
